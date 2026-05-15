@@ -6,4 +6,5 @@ export default defineConfig({
   output: 'static',
   site: 'https://webexpresschile.github.io',
   base: '/teknocopy',
+  outDir: 'docs',
 });
