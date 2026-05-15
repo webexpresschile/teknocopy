@@ -6,5 +6,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   output: 'static',
-  site: 'https://teknocopy.cl',
+  site: 'https://webexpresschile.github.io',
+  base: '/teknocopy',
 });
