@@ -1,0 +1,48 @@
+---
+import site from '../data/site.json';
+const brand = site.brand;
+---
+
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+  <div class="container-site flex items-center justify-between h-16 sm:h-18">
+    <a href="/" class="flex items-center gap-2.5">
+      <div class="w-8 h-8 bg-blue-700 rounded-lg flex items-center justify-center text-white font-bold text-sm">T</div>
+      <div>
+        <div class="font-bold text-sm leading-tight">{brand.name}</div>
+        <div class="text-[10px] text-gray-500 leading-tight hidden sm:block">{brand.tagline}</div>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#servicios" class="text-sm font-medium text-gray-600 hover:text-blue-700 transition-colors">Servicios</a>
+      <a href="#equipos" class="text-sm font-medium text-gray-600 hover:text-blue-700 transition-colors">Equipos</a>
+      <a href="#nosotros" class="text-sm font-medium text-gray-600 hover:text-blue-700 transition-colors">Nosotros</a>
+      <a href="#contacto" class="text-sm font-medium text-gray-600 hover:text-blue-700 transition-colors">Contacto</a>
+    </div>
+    <a href="#contacto" class="btn-primary text-xs sm:text-sm hidden sm:inline-flex">Cotizar ahora</a>
+    <!-- Mobile menu toggle -->
+    <button id="menu-toggle" class="md:hidden p-2" aria-label="Menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="19" y2="6"/><line x1="3" y1="11" x2="19" y2="11"/><line x1="3" y1="16" x2="19" y2="16"/>
+      </svg>
+    </button>
+  </div>
+  <!-- Mobile menu panel -->
+  <div id="mobile-menu" class="md:hidden hidden border-t border-gray-100 bg-white">
+    <div class="container-site py-4 flex flex-col gap-3">
+      <a href="#servicios" onclick="closeMenu()" class="text-sm font-medium text-gray-600 hover:text-blue-700 py-2">Servicios</a>
+      <a href="#equipos" onclick="closeMenu()" class="text-sm font-medium text-gray-600 hover:text-blue-700 py-2">Equipos</a>
+      <a href="#nosotros" onclick="closeMenu()" class="text-sm font-medium text-gray-600 hover:text-blue-700 py-2">Nosotros</a>
+      <a href="#contacto" onclick="closeMenu()" class="text-sm font-medium text-gray-600 hover:text-blue-700 py-2">Contacto</a>
+      <a href="#contacto" onclick="closeMenu()" class="btn-primary w-full justify-center mt-2">Cotizar ahora</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    window.closeMenu = () => { menu.classList.add('hidden'); };
+  }
+</script>

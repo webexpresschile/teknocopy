@@ -1,0 +1,37 @@
+---
+import site from '../data/site.json';
+const equipment = site.equipment;
+---
+
+<section id="equipos" class="section-pad">
+  <div class="container-site">
+    <div class="text-center mb-12 sm:mb-16">
+      <span class="badge mb-4">Equipos</span>
+      <h2 class="heading-lg mb-4">Línea de equipos Ricoh</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base">Desde equipos compactos para oficinas pequeñas hasta sistemas de producción profesional.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-6 sm:gap-8">
+      {equipment.map(eq => (
+        <div class="card p-6 sm:p-8 flex flex-col sm:flex-row gap-6">
+          <div class="w-full sm:w-32 h-32 bg-gray-100 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-14 h-14 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <h3 class="font-bold text-lg">{eq.name}</h3>
+                <p class="text-sm text-blue-700 font-medium">{eq.subtitle}</p>
+              </div>
+              <span class="badge text-[10px] whitespace-nowrap flex-shrink-0">{eq.ideal}</span>
+            </div>
+            <p class="text-gray-500 text-sm mt-3 leading-relaxed">{eq.description}</p>
+            <a href="#contacto" class="mt-4 text-blue-700 font-semibold text-sm hover:text-blue-800 transition-colors inline-flex items-center gap-1.5">
+              Cotizar este equipo →</a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

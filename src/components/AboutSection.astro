@@ -1,0 +1,43 @@
+---
+import site from '../data/site.json';
+const about = site.about;
+const why = site.whyUs;
+---
+
+<section id="nosotros" class="section-pad bg-gradient-to-br from-gray-50 to-white">
+  <div class="container-site">
+    <!-- Why us -->
+    <div class="text-center mb-12 sm:mb-16">
+      <span class="badge mb-4">Por qué Teknocopy</span>
+      <h2 class="heading-lg mb-4">Expertos en impresión, socios en tu operación</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base">No solo instalamos equipos. Nos hacemos responsables de que tu operación de impresión funcione todos los días.</p>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-6 sm:gap-8 mb-20 sm:mb-24">
+      {why.map(w => (
+        <div class="card p-6 sm:p-8 text-center">
+          <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
+            <span class="text-blue-700 font-bold text-lg">{w.number}</span>
+          </div>
+          <h3 class="font-bold text-base mb-3">{w.title}</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">{w.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- About / Stats -->
+    <div class="bg-blue-700 rounded-2xl p-8 sm:p-12 text-white">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-2xl sm:text-3xl font-bold mb-4">{about.title}</h3>
+        <p class="text-blue-100 text-sm sm:text-base leading-relaxed mb-10">{about.description}</p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
+          {about.stats.map(s => (
+            <div>
+              <div class="text-3xl sm:text-4xl font-bold">{s.value}</div>
+              <div class="text-xs sm:text-sm text-blue-200 mt-1">{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

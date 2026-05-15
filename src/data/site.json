@@ -1,0 +1,119 @@
+{
+  "brand": {
+    "name": "Teknocopy",
+    "tagline": "Arriendo de Fotocopiadoras Ricoh",
+    "description": "Expertos en soluciones de impresión para empresas. Especialistas Ricoh con servicio técnico propio.",
+    "logo": "/favicon.svg",
+    "phone": "+56 2 2295 8493",
+    "email": "ventas@teknocopy.cl",
+    "address": "Santiago, Chile"
+  },
+  "hero": {
+    "title": "Arriendo de Fotocopiadoras Ricoh",
+    "subtitle": "Expertos en impresión para tu empresa",
+    "description": "Especialistas en equipos Ricoh con más de 10 años de experiencia. Servicio técnico propio, stock permanente e instalación en 24 horas.",
+    "cta": "Cotizar ahora",
+    "badges": ["Ricoh Specialist", "Servicio técnico propio", "Instalación 24h"]
+  },
+  "services": [
+    {
+      "title": "Arriendo de Equipos",
+      "description": "Desde fotocopiadoras para oficinas pequeñas hasta equipos de alta producción. Todos con mantenimiento preventivo incluido y soporte técnico presencial.",
+      "features": ["Mantenimiento incluido", "Instalación sin costo", "Equipos multifuncionales", "Actualización tecnológica"],
+      "price": "Desde $X/mes"
+    },
+    {
+      "title": "Mantenimiento y Soporte",
+      "description": "Contratos de servicio técnico preventivo y correctivo para equipos Ricoh, Brother, Samsung y Canon. Respuesta garantizada en menos de 24 horas.",
+      "features": ["Técnicos certificados Ricoh", "Repuestos originales en stock", "Soporte presencial en Santiago", "Mantenimiento preventivo mensual"],
+      "price": "Planes desde $X/mes"
+    },
+    {
+      "title": "Venta de Insumos",
+      "description": "Tóner original Ricoh, repuestos y accesorios compatibles. Stock permanente en bodega con despacho inmediato en Santiago.",
+      "features": ["Tóner original Ricoh", "Repuestos certificados", "Despacho en 24h", "Facturación directa"],
+      "price": "Stock permanente"
+    }
+  ],
+  "equipment": [
+    {
+      "name": "Ricoh IM C300",
+      "subtitle": "Impresora multifuncional color",
+      "description": "Equipo ideal para grupos de trabajo medianos. Impresión, copia, escaneo y fax en un solo equipo. Velocidad de 30 ppm.",
+      "ideal": "Oficina mediana (5-15 usuarios)",
+      "image": ""
+    },
+    {
+      "name": "Ricoh IM 550",
+      "subtitle": "Impresora multifuncional B/N",
+      "description": "Alto volumen de impresión en blanco y negro. Ideal para departamentos con gran flujo de documentos. 55 ppm.",
+      "ideal": "Departamentos grandes (15-30 usuarios)",
+      "image": ""
+    },
+    {
+      "name": "Ricoh Pro C5200S",
+      "subtitle": "Equipo de producción color",
+      "description": "Producción profesional de alto volumen. Para empresas que necesitan calidad de imprenta interna. 80 ppm.",
+      "ideal": "Centros de impresión (producción)",
+      "image": ""
+    },
+    {
+      "name": "Ricoh SP 377SFNw",
+      "subtitle": "Impresora multifuncional B/N",
+      "description": "Equipo compacto para oficinas pequeñas. Impresión, escaneo a red y conectividad WiFi. 38 ppm.",
+      "ideal": "Oficina pequeña (1-5 usuarios)",
+      "image": ""
+    }
+  ],
+  "whyUs": [
+    {
+      "number": "01",
+      "title": "Especialistas Ricoh",
+      "description": "El 95% de nuestros equipos en terreno son Ricoh. Conocemos cada modelo a fondo y estamos certificados directamente por el fabricante.",
+      "icon": "certificate"
+    },
+    {
+      "number": "02",
+      "title": "Servicio Técnico Propio",
+      "description": "No tercerizamos. Nuestros técnicos son empleados de Teknocopy, capacitados permanentemente y con stock de repuestos garantizado.",
+      "icon": "tools"
+    },
+    {
+      "number": "03",
+      "title": "Respuesta Rápida",
+      "description": "Instalación en 24 horas hábiles. Soporte presencial en Santiago. Porque si tu fotocopiadora se detiene, tu negocio también.",
+      "icon": "clock"
+    }
+  ],
+  "about": {
+    "title": "Más de una década siendo tu socio en impresión",
+    "description": "Teknocopy nace para ofrecer soluciones de impresión profesionales a empresas chilenas. Nos consolidamos como el partner de confianza para la gestión documental, combinando equipos de primer nivel con un servicio técnico que responde cuando se necesita. Hoy trabajamos con decenas de empresas en Santiago, ayudándolas a mantener su operación funcionando sin interrupciones.",
+    "stats": [
+      {"value": "10+", "label": "Años de experiencia"},
+      {"value": "500+", "label": "Equipos instalados"},
+      {"value": "95%", "label": "Especialistas Ricoh"},
+      {"value": "24h", "label": "Respuesta garantizada"}
+    ]
+  },
+  "contact": {
+    "title": "Cotiza con nosotros",
+    "description": "Cuéntanos qué necesita tu empresa y te enviamos una cotización en menos de 24 horas.",
+    "whatsapp": "+56222958493",
+    "email": "ventas@teknocopy.cl",
+    "phone": "+56 2 2295 8493"
+  },
+  "footer": {
+    "description": "Soluciones profesionales de impresión para empresas. Especialistas en equipos Ricoh, servicio técnico propio y stock permanente.",
+    "links": {
+      "Servicios": ["Arriendo de Equipos", "Mantenimiento", "Insumos"],
+      "Empresa": ["Nosotros", "Trabaja con nosotros", "Contacto"],
+      "Contacto": ["+56 2 2295 8493", "ventas@teknocopy.cl", "Santiago, Chile"]
+    },
+    "copyright": "2026 Teknocopy. Todos los derechos reservados."
+  },
+  "seo": {
+    "title": "Teknocopy — Arriendo de Fotocopiadoras Ricoh en Santiago",
+    "description": "Arriendo de fotocopiadoras Ricoh con servicio técnico propio. Instalación en 24 horas. Especialistas en equipos multifuncionales para empresas en Santiago.",
+    "ogImage": ""
+  }
+}

@@ -1,0 +1,36 @@
+---
+import '../styles/global.css';
+const { title, description } = Astro.props;
+const siteTitle = title || 'Teknocopy — Arriendo de Fotocopiadoras Ricoh';
+const siteDesc = description || 'Arriendo de fotocopiadoras Ricoh con servicio técnico propio. Instalación en 24 horas. Especialistas en equipos multifuncionales para empresas.';
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{siteTitle}</title>
+  <meta name="description" content={siteDesc} />
+  <meta property="og:title" content={siteTitle} />
+  <meta property="og:description" content={siteDesc} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://teknocopy.cl" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Teknocopy",
+    "description": "Arriendo de fotocopiadoras Ricoh con servicio técnico propio",
+    "url": "https://teknocopy.cl",
+    "telephone": "+56222958493",
+    "address": { "@type": "PostalAddress", "addressLocality": "Santiago", "addressCountry": "CL" }
+  })} />
+  <slot name="head" />
+</head>
+<body>
+  <slot />
+</body>
+</html>

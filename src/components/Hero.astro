@@ -1,0 +1,47 @@
+---
+import site from '../data/site.json';
+const h = site.hero;
+const b = site.brand;
+---
+
+<section class="section-pad relative overflow-hidden bg-gradient-to-br from-blue-700 via-blue-800 to-blue-950 text-white">
+  <!-- Background pattern -->
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute top-20 left-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-300 rounded-full blur-3xl"></div>
+  </div>
+  <div class="container-site relative">
+    <div class="max-w-3xl">
+      <div class="flex flex-wrap gap-2 mb-6">
+        {h.badges.map(badge => (
+          <span class="bg-white/15 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full backdrop-blur-sm">{badge}</span>
+        ))}
+      </div>
+      <p class="text-blue-200 font-semibold text-sm sm:text-base mb-3 tracking-wide uppercase">{h.subtitle}</p>
+      <h1 class="heading-xl text-balance mb-6 leading-[1.1]">{h.title}</h1>
+      <p class="text-base sm:text-lg text-blue-100/90 max-w-2xl mb-8 leading-relaxed">{h.description}</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="#contacto" class="inline-flex items-center gap-2 bg-white text-blue-800 px-7 py-3.5 rounded-lg font-bold text-sm hover:bg-blue-50 transition-all shadow-xl">
+          {h.cta} →
+        </a>
+        <a href="#servicios" class="inline-flex items-center gap-2 border-2 border-white/30 text-white px-7 py-3.5 rounded-lg font-semibold text-sm hover:bg-white/10 transition-all">
+          Ver servicios
+        </a>
+      </div>
+    </div>
+    <!-- Stats row -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-16 pt-12 border-t border-white/10">
+      {[
+        { v: "10+", l: "Años" },
+        { v: "500+", l: "Equipos instalados" },
+        { v: "95%", l: "Especialistas Ricoh" },
+        { v: "24h", l: "Respuesta" }
+      ].map(s => (
+        <div class="text-center">
+          <div class="text-2xl sm:text-3xl font-bold">{s.v}</div>
+          <div class="text-xs sm:text-sm text-blue-200/80 mt-1">{s.l}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
